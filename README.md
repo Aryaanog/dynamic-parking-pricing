@@ -41,10 +41,11 @@ The goal: **Optimize revenue and utilization** while keeping price updates smoot
 ```mermaid
 flowchart TD
     A[Real-Time Data Stream - Pathway] --> B[Preprocessing - Pandas, NumPy]
-    B --> C[Pricing Engine<br>(Baseline & Demand-Based Models)]
-    C --> D[Smoothing & Constraints]
-    C --> E[Competitor Price Logic<br>(Haversine Distance)]
+    B --> C[Pricing Engine - Baseline and Demand-Based Models]
+    C --> D[Smoothing and Constraints]
+    C --> E[Competitor Price Logic - Haversine Distance]
     D --> F[Price Output Stream]
     E --> F
     F --> G[Bokeh Visualization]
-    F --> H[Rerouting Suggestion<br>if Overburdened]
+    F --> H[Rerouting Suggestion if Overburdened]
+
